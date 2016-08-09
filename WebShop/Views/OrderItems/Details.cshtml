@@ -1,0 +1,74 @@
+﻿@model WebShop.Models.OrderItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrderItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Order.OrderRef)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order.OrderRef)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderItemProductNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderItemProductNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderItemName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderItemName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderItemDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderItemDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderItemPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderItemPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderItemImagePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderItemImagePath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderCount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderCount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrderItemID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
